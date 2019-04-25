@@ -1,0 +1,15 @@
+{
+  "name": "mountebank-helper-explorer",
+  "version": "0.1.0",
+  "description": "Exploring Mountebank-Helper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Scott Davis <scott@thirstyhead.com>",
+  "license": "CC-BY-4.0",
+  "dependencies": {
+    "mountebank-helper": "^1.2.1"
+  }
+}
