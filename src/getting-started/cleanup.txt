@@ -1,0 +1,4 @@
+curl -X DELETE http://localhost:2525/imposters/4545
+curl -X DELETE http://localhost:2525/imposters/5555
+
+

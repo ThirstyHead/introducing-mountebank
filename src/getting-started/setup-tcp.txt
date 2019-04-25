@@ -1,0 +1,13 @@
+curl -i -X POST -H 'Content-Type: application/json' http://localhost:2525/imposters --data '{
+  "port": 5555,
+  "protocol": "tcp",
+  "mode": "binary",
+  "stubs": [{
+    "responses": [
+      { "is": { "data": "aGVsbG8sIHdvcmxkIQ==" }}
+    ],
+    "predicates": [{ "contains": { "data": "c2F5SGVsbG8=" } }]
+  }]
+}'
+
+

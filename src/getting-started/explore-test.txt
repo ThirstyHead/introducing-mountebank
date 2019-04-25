@@ -1,0 +1,18 @@
+curl -i -X POST -H 'Content-Type: application/json' http://localhost:4545/test --data '{"optionalField": true}'
+
+HTTP/1.1 400 Bad Request
+Connection: close
+Date: Sat, 04 Jan 2014 02:48:16 GMT
+Transfer-Encoding: chunked
+
+
+
+curl -i -X POST http://localhost:4545/test --data '{"optionalField": true}'
+
+HTTP/1.1 200 OK
+Connection: close
+Date: Sat, 04 Jan 2014 02:48:16 GMT
+Transfer-Encoding: chunked
+
+
+

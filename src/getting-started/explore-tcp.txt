@@ -1,0 +1,8 @@
+echo "Calling sayHello over binary protocol" | nc localhost 5555
+
+
+hello, world!
+
+
+
+
