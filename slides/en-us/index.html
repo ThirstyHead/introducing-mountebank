@@ -1,0 +1,513 @@
+<html lang="en"><head>
+    <title>Introducing Mountebank</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1,
+                                   user-scalable=yes">
+    <meta name="author" content="Scott Davis <scott@thirstyhead.com>">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/talk-o-vision.css">
+
+    <style>
+      .main-title{
+        background: url('slides/title/snake-oil.jpg') no-repeat center center;
+        background-size: contain;
+      }
+
+      .banner{
+        background-color: var(--theme-foreground-color);
+        opacity: 0.7;
+        top: 5vh;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 hidden="" aria-hidden="false"></h1>
+    <main class="slideshow">
+      <section class="main-title" id="1" data-src="slides/title">
+        <h2 hidden="" aria-hidden="false">Introducing Mountebank</h2>
+        <figure>
+          <div class="banner">
+            Introducing Mountebank
+            <div class="subtitle">
+              Testing and Mocking Microservices
+            </div>
+            <div class="bio">
+              <br>
+              Scott Davis<br>
+              <a href="mailto:scott@thirstyhead.com">scott@thirstyhead.com</a><br>
+              <a href="https://twitter.com/scottdavis99">@scottdavis99</a>
+            </div>
+          </div>
+          <figcaption>
+            <p>
+            </p>
+            <p>
+              Presented by Scott Davis. His email address is
+              scott@thirstyhead.com. His Twitter handle is @scottdavis99.
+            </p>
+          </figcaption>
+        </figure>
+      </section>
+      <!-- <section data-src="slides/instructions"></section> -->
+      <section class="theme-invert" id="2" data-src="slides/bio">
+        <h2 hidden="" aria-hidden="false">Biography</h2>
+        <audio src="slides/bio/audio.mp3"></audio>
+        <figure>
+          <img src="slides/bio/scott-davis-bio.png" alt="Scott Davis' Biography" class="contain">
+
+          <figcaption>
+           <p>Hi! My name is Scott Davis. I'm currently a Principle Engineer
+             with ThoughtWorks. Before that, I ran a software consultancy out
+             of Denver, Colorado called ThirstyHead. </p>
+
+           <p>I've been writing about web development for years -- articles
+             for IBM, books for O'Reilly and the Pragmatic Bookshelf, and most
+             recently videos for O'Reilly as well.</p>
+          </figcaption>
+        </figure>
+      </section>
+      <section id="3" data-src="slides/snake-oil">
+        <h2 hidden="" aria-hidden="false">Snake Oil</h2>
+        <figure>
+          <img src="slides/snake-oil/snake-oil.jpg" alt="Snake Oil Salesman" class="contain" data-src="">
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="4" data-src="slides/snake-oil-2">
+        <h2 hidden="" aria-hidden="false">Snake Oil Ad</h2>
+        <figure>
+          <a href="https://commons.wikimedia.org/wiki/File:Clark_Stanley%27s_Snake_Oil_Liniment.png">
+          <img src="slides/snake-oil-2/snake-oil-2.png" alt="Snake Oil Ad" class="contain" data-src="https://commons.wikimedia.org/wiki/File:Clark_Stanley%27s_Snake_Oil_Liniment.png">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="5" data-src="slides/mountebank-wiki">
+        <h2 hidden="" aria-hidden="false">Mountebank</h2>
+        <figure>
+          <a href="https://en.wikipedia.org/wiki/Charlatan">
+          <img src="slides/mountebank-wiki/mountebank-wiki.png" alt="Mountebank" class="contain" data-src="https://en.wikipedia.org/wiki/Charlatan">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="6" data-src="slides/mountebank">
+        <h2 aria-hidden="false">http://www.mbtest.org/</h2>
+        <figure>
+          <a href="http://www.mbtest.org/">
+          <img src="slides/mountebank/mountebank-logo.png" alt="Mountebank" class="contain-with-header" data-src="http://www.mbtest.org/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="7" data-src="slides/mountebank-welcome">
+        <h2 hidden="" aria-hidden="false">Mountebank Welcome</h2>
+        <figure>
+          <a href="http://www.mbtest.org/">
+          <img src="slides/mountebank-welcome/mountebank-welcome.png" alt="Mountebank" class="contain-with-header" data-src="http://www.mbtest.org/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="8" data-src="slides/mountebank-testimonials">
+        <h2 hidden="" aria-hidden="false">Mountebank Welcome</h2>
+        <figure>
+          <a href="http://www.mbtest.org/">
+          <img src="slides/mountebank-testimonials/mountebank-testimonials.png" alt="Mountebank" class="contain" data-src="http://www.mbtest.org/">
+          </a>
+
+          <figcaption>
+            <p>
+
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="9" data-src="slides/mountebank-why">
+        <h2 hidden="" aria-hidden="false">Mountebank Why</h2>
+        <figure>
+          <a href="http://www.mbtest.org/">
+          <img src="slides/mountebank-why/mountebank-why.png" alt="Mountebank" class="contain-with-header" data-src="http://www.mbtest.org/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="10" data-src="slides/mountebank-how-it-works">
+        <h2 hidden="" aria-hidden="false">Mountebank Welcome</h2>
+        <figure>
+          <a href="http://www.mbtest.org/">
+          <img src="slides/mountebank-how-it-works/mountebank-how-it-works.png" alt="Mountebank" class="contain-with-header" data-src="http://www.mbtest.org/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="11" data-src="slides/mountebank-lexicon">
+        <h2 hidden="" aria-hidden="false">Mountebank Welcome</h2>
+        <figure>
+          <a href="http://www.mbtest.org/">
+          <img src="slides/mountebank-lexicon/mountebank-lexicon.png" alt="Mountebank" class="contain-with-header" data-src="http://www.mbtest.org/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="12" data-src="slides/mountebank-lexicon-2">
+        <h2 hidden="" aria-hidden="false">Mountebank Welcome</h2>
+        <figure>
+          <a href="http://www.mbtest.org/">
+          <img src="slides/mountebank-lexicon-2/mountebank-lexicon-2.png" alt="Mountebank" class="contain-with-header" data-src="http://www.mbtest.org/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="13" data-src="slides/mountebank-getting-started">
+        <h2 hidden="" aria-hidden="false">Mountebank Welcome</h2>
+        <figure>
+          <a href="http://www.mbtest.org/">
+          <img src="slides/mountebank-getting-started/mountebank-getting-started.png" alt="Mountebank" class="contain" data-src="http://www.mbtest.org/">
+          </a>
+
+          <figcaption>
+            <p>
+
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="14" data-src="slides/mountebank-getting-started-2">
+        <h2 hidden="" aria-hidden="false">Mountebank Welcome</h2>
+        <figure>
+          <a href="http://www.mbtest.org/">
+          <img src="slides/mountebank-getting-started-2/mountebank-getting-started-2.png" alt="Mountebank" class="contain" data-src="http://www.mbtest.org/">
+          </a>
+
+          <figcaption>
+            <p>
+
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="15" data-src="slides/mountebank-client-libraries">
+        <h2 hidden="" aria-hidden="false">Mountebank Welcome</h2>
+        <figure>
+          <a href="http://www.mbtest.org/">
+          <img src="slides/mountebank-client-libraries/mountebank-client-libraries.png" alt="Mountebank" class="contain" data-src="http://www.mbtest.org/">
+          </a>
+
+          <figcaption>
+            <p>
+
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="16" data-src="slides/mountebank-client-libraries-2">
+        <h2 hidden="" aria-hidden="false">Mountebank Welcome</h2>
+        <figure>
+          <a href="http://www.mbtest.org/">
+          <img src="slides/mountebank-client-libraries-2/mountebank-client-libraries-2.png" alt="Mountebank" class="contain" data-src="http://www.mbtest.org/">
+          </a>
+
+          <figcaption>
+            <p>
+
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="17" data-src="slides/mountebank-build-plugins">
+        <h2 hidden="" aria-hidden="false">Mountebank Welcome</h2>
+        <figure>
+          <a href="http://www.mbtest.org/">
+          <img src="slides/mountebank-build-plugins/mountebank-build-plugins.png" alt="Mountebank" class="contain" data-src="http://www.mbtest.org/">
+          </a>
+
+          <figcaption>
+            <p>
+
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="18" data-src="slides/mountebank-additional-tools">
+        <h2 hidden="" aria-hidden="false">Mountebank Welcome</h2>
+        <figure>
+          <a href="http://www.mbtest.org/">
+          <img src="slides/mountebank-additional-tools/mountebank-additional-tools.png" alt="Mountebank" class="contain" data-src="http://www.mbtest.org/">
+          </a>
+
+          <figcaption>
+            <p>
+
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="section-title" id="19" data-src="slides/title-getting-started">
+        <h2 aria-hidden="false">Getting Started</h2>
+        <figure>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="20" data-src="slides/mountebank-helper">
+        <h2 hidden="" aria-hidden="false">Mountebank Helper</h2>
+        <figure>
+          <a href="https://www.npmjs.com/package/mountebank-helper">
+          <img src="slides/mountebank-helper/mountebank-helper.png" alt="Mountebank Helper" class="contain" data-src="https://www.npmjs.com/package/mountebank-helper">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="21" data-src="slides/mountebank-helper-view-imposters">
+        <h2 hidden="" aria-hidden="false">Mountebank Helper - View Imposters</h2>
+        <figure>
+          <img src="slides/mountebank-helper-view-imposters/mountebank-helper-view-imposters.png" alt="" class="contain" data-src="">
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="22" data-src="slides/mountebank-helper-view-imposters-2">
+        <h2 hidden="" aria-hidden="false">Mountebank Helper - View Imposters</h2>
+        <figure>
+          <img src="slides/mountebank-helper-view-imposters-2/mountebank-helper-view-imposters-2.png" alt="" class="contain" data-src="">
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="23" data-src="slides/mountebank-curl">
+        <h2 hidden="" aria-hidden="false">Mountebank Welcome</h2>
+        <figure>
+          <a href="http://www.mbtest.org/">
+          <img src="slides/mountebank-curl/mountebank-curl.png" alt="Mountebank" class="contain" data-src="http://www.mbtest.org/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="24" data-src="slides/mountebank-curl-2">
+        <h2 hidden="" aria-hidden="false">Mountebank Welcome</h2>
+        <figure>
+          <a href="http://www.mbtest.org/">
+          <img src="slides/mountebank-curl-2/mountebank-curl-2.png" alt="Mountebank" class="contain" data-src="http://www.mbtest.org/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="25" data-src="slides/mountebank-curl-3">
+        <h2 hidden="" aria-hidden="false">Mountebank Welcome</h2>
+        <figure>
+          <a href="http://www.mbtest.org/">
+          <img src="slides/mountebank-curl-3/mountebank-curl-3.png" alt="Mountebank" class="contain" data-src="http://www.mbtest.org/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="section-title" id="26" data-src="slides/title-conclusion">
+        <h2 aria-hidden="false">Conclusion</h2>
+        <figure>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="27" data-src="slides/mountebank">
+        <h2 aria-hidden="false">http://www.mbtest.org/</h2>
+        <figure>
+          <a href="http://www.mbtest.org/">
+          <img src="slides/mountebank/mountebank-logo.png" alt="Mountebank" class="contain-with-header" data-src="http://www.mbtest.org/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="28" data-src="slides/mountebank-welcome">
+        <h2 hidden="" aria-hidden="false">Mountebank Welcome</h2>
+        <figure>
+          <a href="http://www.mbtest.org/">
+          <img src="slides/mountebank-welcome/mountebank-welcome.png" alt="Mountebank" class="contain-with-header" data-src="http://www.mbtest.org/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="29" data-src="slides/mountebank-why">
+        <h2 hidden="" aria-hidden="false">Mountebank Why</h2>
+        <figure>
+          <a href="http://www.mbtest.org/">
+          <img src="slides/mountebank-why/mountebank-why.png" alt="Mountebank" class="contain-with-header" data-src="http://www.mbtest.org/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section id="30" data-src="slides/mountebank-how-it-works">
+        <h2 hidden="" aria-hidden="false">Mountebank Welcome</h2>
+        <figure>
+          <a href="http://www.mbtest.org/">
+          <img src="slides/mountebank-how-it-works/mountebank-how-it-works.png" alt="Mountebank" class="contain-with-header" data-src="http://www.mbtest.org/">
+          </a>
+
+          <figcaption>
+            <p>
+            
+            </p>
+
+          </figcaption>
+        </figure>
+      </section>
+      <section class="main-title" id="31" data-src="slides/title">
+        <h2 hidden="" aria-hidden="false">Introducing Mountebank</h2>
+        <figure>
+          <div class="banner">
+            Introducing Mountebank
+            <div class="subtitle">
+              Testing and Mocking Microservices
+            </div>
+            <div class="bio">
+              <br>
+              Scott Davis<br>
+              <a href="mailto:scott@thirstyhead.com">scott@thirstyhead.com</a><br>
+              <a href="https://twitter.com/scottdavis99">@scottdavis99</a>
+            </div>
+          </div>
+          <figcaption>
+            <p>
+            </p>
+            <p>
+              Presented by Scott Davis. His email address is
+              scott@thirstyhead.com. His Twitter handle is @scottdavis99.
+            </p>
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <script src="js/talk-o-vision.js"></script>
+  
+
+</body></html>
